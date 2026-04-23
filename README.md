@@ -39,6 +39,7 @@ The agent nodes check this state at every step to decide whether to retrieve kno
 1. **Clone the repository:**
 
    git clone [https://github.com/Jasmeen-1999/autostream-agent.git](https://github.com/Jasmeen-1999/autostream-agent.git)
+
    cd autostream-agent
 2. **Install dependencies:**   
     pip install -r requirements.txt
