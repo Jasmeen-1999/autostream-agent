@@ -52,13 +52,9 @@ To deploy the AutoStream agent on WhatsApp, I would implement the following infr
 2. **Platform Integration:** Integrate with the Twilio Messaging API or the Meta Business API to receive incoming WhatsApp messages.
 
 3. **Flow:**
-
-Incoming messages from WhatsApp are sent to my webhook as JSON payloads.
-
-The webhook extracts the Sender ID and Message Body.
-
-These are passed to the LangGraph invoke() method, using the Sender ID as the thread_id to retrieve the correct persistent state.
-
-The agent's response is generated and sent back to the user via the Twilio/Meta API.
+     Incoming messages from WhatsApp are sent to my webhook as JSON payloads.
+     The webhook extracts the Sender ID and Message Body.
+     These are passed to the LangGraph invoke() method, using the Sender ID as the thread_id to retrieve the correct persistent state.
+     The agent's response is generated and sent back to the user via the Twilio/Meta API.
 
 4. **Environment:** This would be containerized (Docker) and deployed on a service like AWS ECS or Google Cloud Run for scalability.
